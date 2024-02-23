@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TruuLEE OTP form</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+</head>
+
+<body>
+
+    
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Open Form</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="form">
+                <h1>OTP Using JavaScript</h1>
+                <input type="email" id="email" placeholder="Email">
+                <input type="bname" id="bname" placeholder="Business Name">
+                <div class="otpverify">
+                    <input type="text" id="otp_inp" placeholder="OTP">
+                    <button class="btn" id="otp-btn">Verify</button>
+                </div>
+                <button class="btn" onclick="sendOTP()">Send OTP</button>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+
+
+    <script src="emailotp.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
